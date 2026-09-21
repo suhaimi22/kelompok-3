@@ -1,1 +1,37 @@
+.logoo {
+    height: 50px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
 
+.logo a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px 12px;
+    text-decoration: none;
+    color: inherit;
+    width: max-content; 
+}
+
+.logo a b {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 1;
+    font-family: Calibri;
+}
+
+.logo a small {
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+    margin-left: auto;
+    margin-top: auto;
+    font-weight: 400;
+    color: #504f4f66;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    align-self: start;
+    text-align: center;
+}
