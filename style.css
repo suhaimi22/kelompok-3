@@ -208,6 +208,17 @@ main section header h1, main header h2 {
     transform: none;
 }
 
+main section h2 {
+    color: white;
+}
+
+.movie-page .movie-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
 .kaki {
     background-color: #b51313;
     color: white;
