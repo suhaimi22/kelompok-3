@@ -259,3 +259,49 @@ main section h2 {
 }
 
 >>>>>>> 3f8c5bf21edb455e5dd4986a1f02310623c31de1
+
+
+/* 5. ATURAN DASAR BADGE (Kategori & Rating) */
+.movie-card[data-category]:not([data-category=""])::before,
+.movie-card[data-rating]:not([data-rating=""])::after {
+    position: absolute;
+    z-index: 5;
+    pointer-events: none;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    /* Transisi animasi khusus untuk badge */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Badge Kategori (Kanan Atas) */
+.movie-card[data-category]:not([data-category=""])::before {
+    content: attr(data-category);
+    top: 10px;
+    right: 10px;
+    background-color: #e50914;
+    color: #ffffff;
+}
+
+/* Badge Rating (Kiri Bawah) */
+.movie-card[data-rating]:not([data-rating=""])::after {
+    content: attr(data-rating);
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    backdrop-filter: blur(4px);
+}
+
+/* 6. ANIMASI TAMBAHAN BADGE SAAT KARTU DI-HOVER & DIPENCET */
+.movie-card:hover::before,
+.movie-card:hover::after {
+    transform: scale(1.08); /* Badge ikut 'pop-up' membesar sedikit saat kartu di-hover */
+}
+
+.movie-card:active::before,
+.movie-card:active::after {
+    transform: scale(0.95); /* Badge ikut membal ke dalam saat kartu dipencet */
+}
