@@ -67,60 +67,6 @@ nav a {
     padding: 15px 20px;
 }
 
-nav form {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-nav form label {
-    display: none;
-}
-
-nav form input {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    border: 1px solid #333333;
-    padding: 8px  36px 8px 16px ;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    outline: none;
-    width: 200px;
-    transition: all 0.3 ease;
-}
-
-nav form input[type="search"]:focus {
-    border-color: #e50914;
-    background-color: #262626;
-    width: 240px;
-}
-
-nav form button {
-    background: transparent;
-    border: none;
-    color: #aaaaaa;
-    font-size: 1rem;
-    position: absolute;
-    right: 12px;
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 20px;
-    height: 20px;
-}
-
-nav form button::before {
-    content: "🔍︎";
-    text-indent: 0;
-    display: block;
-    position: absolute;
-    top: -2px;
-    right: 0;
-}
-
-nav form button::hover::before {
-    color: #ffffff;
-}
-
 .slide_film {
     display: flex;
     gap: 20px;
