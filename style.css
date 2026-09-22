@@ -248,7 +248,6 @@ main section h2 {
     font-family: Calibri;
 }
 
-<<<<<<< HEAD
 .article-list {
   width: 100% !important;
   max-width: 100% !important;
@@ -306,7 +305,7 @@ main section h2 {
   margin-bottom: 0.85rem;
   text-align: left;
 } q
-=======
+
 @media (max-width: 480px) {
     nav {
         flex-direction: column;
@@ -387,4 +386,4 @@ main section h2 {
         font-size: 12px;
     }
 }
->>>>>>> c1e6a6c62f2c200eba2e9be28cf9326bfa857e03
+
