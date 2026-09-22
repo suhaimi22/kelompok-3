@@ -138,3 +138,16 @@ nav form button::hover::before {
     border: none;
     border-radius: 12px;
 }
+
+main section {
+    padding: 24px 20px ;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+main section header h1, main header h2 {
+    font-size: 1.4rem;
+    font-family: Calibri;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
