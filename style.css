@@ -229,6 +229,7 @@ main section header h1, main header h2 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .movie-card:hover {
     transform: translateY(-6px) scale(1.06);
     box-shadow: 0 16px 32px rgba(229, 9, 20, 0.4);
@@ -236,6 +237,19 @@ main section header h1, main header h2 {
     z-index: 2;
 }
 =======
+=======
+main section h2 {
+    color: white;
+}
+
+.movie-page .movie-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+>>>>>>> 5c64443b5770dc72897784bab1e4ef112a882b40
 .kaki {
     background-color: #b51313;
     color: white;
