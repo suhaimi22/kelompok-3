@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .logoo {
     height: 50px;
     width: auto;
@@ -20,6 +24,7 @@
     font-size: 1.3rem;
     line-height: 1;
     font-family: Calibri;
+    color: white;
 }
 
 .logo a small {
@@ -29,7 +34,7 @@
     margin-left: auto;
     margin-top: auto;
     font-weight: 400;
-    color: #504f4f66;
+    color: #ffffff66;
     letter-spacing: 2px;
     line-height: 1.1;
     align-self: start;
@@ -150,6 +155,7 @@ main section header h1, main header h2 {
     font-family: Calibri;
     font-weight: 700;
     margin-bottom: 16px;
+    color:  white;
 }
 
 .movie-list {
