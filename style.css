@@ -297,7 +297,88 @@ main section h2 {
     }
 }
 
-.artikel-card{
+    .artikel-card{
     color: white;
     font-family: Calibri;
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+        gap: 12px;
+    }
+    .logo a {
+        justify-content: center;
+    }
+    .logoo {
+        height: 45px;
+    }
+    .logo a b {
+        font-size: 1.1rem;
+    }
+    .logo a small {
+        font-size: 0.7rem;
+    }
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+    nav a {
+        padding: 9px 7px;
+        font-size: 12px;
+    }
+    nav form {
+        width: 100%;
+        justify-content: center;
+    }
+    nav form input {
+        width: 100%;
+        max-width: 300px;
+    }
+    nav form input[type="search"]:focus {
+        width: 100%;
+        max-width: 300px;
+    }
+    .slide_film {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .slide_film iframe {
+        min-width: 92vw;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border-width: 2px;
+        border-radius: 8px;
+    }
+    main section {
+        padding: 18px 10px;
+    }
+    main section header h1,
+    main header h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    .movie-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .movie-card {
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    .poster-link {
+        border-radius: 8px;
+    }
+    .movie-card:hover {
+        transform: translateY(-3px) scale(1.02);
+    }
+    .kaki {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
 }
