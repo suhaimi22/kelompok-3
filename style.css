@@ -140,8 +140,10 @@ nav form button::hover::before {
     flex-shrink: 0;
     aspect-ratio: 16 / 9;
     scroll-snap-align: center;
-    border: none;
+    border: 3px solid #8a8686;
     border-radius: 12px;
+    box-sizing: border-box;
+    
 }
 
 main section {
@@ -161,37 +163,37 @@ main section header h1, main header h2 {
 .movie-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 16px;
+    gap: 14px;
 }
 
 .movie-card {
-    position: relative;
-    display: flex;
-    flex-direction: transparent ;
-    box-shadow: none;
-    margin-bottom: 25px;
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: top center;
 }
 
-.poster link {
-    position: relative;
+.movie-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.8);
+    z-index: 10;
+}
+
+.poster-link {
     display: block;
     width: 100%;
     aspect-ratio: 2 / 3;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transform: translateZ(0);
-    will-change: transform, box shadow;
-    transition: transform 0.45s cubic-bezier(0, 16, 1, 0.3, 1),
-                box-shadow 0.45s cubic-bezier(0, 16, 1, 0.3, 1);
 }
 
 .poster-link img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-    transition: none;
 }
 
 .movie-card img {
@@ -205,3 +207,12 @@ main section header h1, main header h2 {
 .movie-card:hover img {
     transform: none;
 }
+
+.kaki {
+    background-color: #b51313;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
