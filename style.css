@@ -167,21 +167,18 @@ main section header h1, main header h2 {
 }
 
 .movie-card {
-<<<<<<< HEAD
     position: relative;
     display: flex;
     flex-direction: transparent ;
     box-shadow: none;
     margin-bottom: 25px;
     border-radius: 20px;
-=======
     width: 100%;
     margin: 0;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform-origin: top center;
->>>>>>> 3f8c5bf21edb455e5dd4986a1f02310623c31de1
 }
 
 .movie-card:hover {
@@ -203,7 +200,6 @@ main section header h1, main header h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-<<<<<<< HEAD
     display: block;
     transition: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
@@ -212,8 +208,6 @@ main section header h1, main header h2 {
     transition: transform 0.45 cubic-bezier(0.215, 0.610, 0.355, 1),
                 box-shadow 0.45s cubic-bezier(0.215, 0.610, 0355, 1),
                 border-color 0.45s ease;
-=======
->>>>>>> 3f8c5bf21edb455e5dd4986a1f02310623c31de1
 }
 
 .movie-card img {
@@ -228,16 +222,13 @@ main section header h1, main header h2 {
     transform: none;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .movie-card:hover {
     transform: translateY(-6px) scale(1.06);
     box-shadow: 0 16px 32px rgba(229, 9, 20, 0.4);
     border-color: #e50914;
     z-index: 2;
 }
-=======
-=======
+
 main section h2 {
     color: white;
 }
@@ -249,7 +240,6 @@ main section h2 {
     width: 100%;
 }
 
->>>>>>> 5c64443b5770dc72897784bab1e4ef112a882b40
 .kaki {
     background-color: #b51313;
     color: white;
@@ -258,4 +248,3 @@ main section h2 {
     margin-top: 10px;
 }
 
->>>>>>> 3f8c5bf21edb455e5dd4986a1f02310623c31de1
