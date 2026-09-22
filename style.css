@@ -387,3 +387,14 @@ main section h2 {
     }
 }
 
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+
+  
+
