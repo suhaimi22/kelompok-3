@@ -170,6 +170,7 @@ main section header h1, main header h2 {
     flex-direction: transparent ;
     box-shadow: none;
     margin-bottom: 25px;
+    border-radius: 20px;
 }
 
 .poster link {
@@ -192,6 +193,12 @@ main section header h1, main header h2 {
     object-fit: cover;
     display: block;
     transition: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    transition: translateZ(0);
+    will-change: transform, box-shadow;
+    transition: transform 0.45 cubic-bezier(0.215, 0.610, 0.355, 1),
+                box-shadow 0.45s cubic-bezier(0.215, 0.610, 0355, 1),
+                border-color 0.45s ease;
 }
 
 .movie-card img {
@@ -204,4 +211,11 @@ main section header h1, main header h2 {
 
 .movie-card:hover img {
     transform: none;
+}
+
+.movie-card:hover {
+    transform: translateY(-6px) scale(1.06);
+    box-shadow: 0 16px 32px rgba(229, 9, 20, 0.4);
+    border-color: #e50914;
+    z-index: 2;
 }
