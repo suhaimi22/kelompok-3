@@ -248,3 +248,52 @@ main section h2 {
     margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 15px;
+        gap: 10px;
+    }
+    
+    nav a {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+
+    nav ul {
+        gap: 0;
+        margin-left: 0;
+    }
+
+    nav form input {
+        width: 160px;
+    }
+
+    nav form input[type="search"]:focus {
+        width: 180px;
+    }
+
+    .slide_film {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .slide_film iframe {
+        min-width: 85vw;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+     main section {
+        padding: 20px 15px;
+    }
+
+    .movie-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+
+    .movie-card:hover {
+        transform: translateY(-4px) scale(1.03);
+    }
+}
+
