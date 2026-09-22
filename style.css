@@ -301,3 +301,15 @@ main section h2 {
     color: white;
     font-family: Calibri;
 }
+
+.article-card {
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.gambar {
+    border-radius: 5px;
+    width: 550px;
+    height: 300px;
+}
